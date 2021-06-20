@@ -180,11 +180,28 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\DrawManager.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MazeManager.cpp" />
+    <ClCompile Include="src\Monster.cpp" />
+    <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Projectile.cpp" />
+    <ClCompile Include="src\RoomManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\DrawManager.h" />
+    <ClInclude Include="src\MazeManager.h" />
+    <ClInclude Include="src\Monster.h" />
+    <ClInclude Include="src\Object.h" />
     <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\Projectile.h" />
+    <ClInclude Include="src\Room.h" />
+    <ClInclude Include="src\RoomManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
