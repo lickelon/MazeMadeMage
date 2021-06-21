@@ -7,8 +7,6 @@ CRoomManager::CRoomManager()
 	roomHeight = 1200;
 	roomWidth = 3000;
 	playerTall = 300;
-	m_mobCount = 0;
-	m_projectileCount = 0;
 
 	currentX = 0;
 	currentY = 0;
@@ -19,7 +17,6 @@ CRoomManager::CRoomManager()
 
 CRoomManager::~CRoomManager()
 {
-	//필요한가?
 }
 
 void CRoomManager::drawRoom()
@@ -220,8 +217,6 @@ void CRoomManager::drawWall(ofVec3f position, float angle)
 	color.set(80);
 	drawManager->fillBox(vertex, color);
 
-	//color.set(137, 22, 22);
-	//color.set(115, 51, 17);
 	color.set(68, 25, 7);
 	for (int i = 0; i < roomHeight / brickHeight; i++)
 	{
@@ -281,6 +276,7 @@ void CRoomManager::drawWall(ofVec3f position, float angle)
 		}
 	}
 
+	ofSetLineWidth(5);
 	vertex[0].set(-roomWidth / 2, -roomHeight + playerTall, 0);
 	vertex[1].set(roomWidth / 2, -roomHeight + playerTall, 0);
 	vertex[2].set(roomWidth / 2, playerTall, 0);

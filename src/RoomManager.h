@@ -35,8 +35,6 @@ protected:
 	direction checkPlayerNearRoom();
 
 private:
-	int m_mobCount;
-	int m_projectileCount;
 	int roomWidth;
 	int roomHeight;
 	int playerTall;
@@ -47,7 +45,6 @@ private:
 
 	CPlayer m_player;
 
-	CMonster m_monster;
 	vector<CMonster> monsters;
 	vector<CProjectile> projectiles;
 };

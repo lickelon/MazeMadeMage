@@ -4,14 +4,14 @@
 CMonster::CMonster()
 {
 	CObject();
-	m_speed = 15;
+	m_speed = 10;
 }
 
 CMonster::CMonster(ofVec3f& position)
 {
 	CObject();
 	setPosition(position);
-	m_speed = 15;
+	m_speed = 10;
 }
 
 CMonster::CMonster(ofVec3f& position, ofVec3f& rotation)

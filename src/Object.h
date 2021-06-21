@@ -4,8 +4,6 @@
 
 class CObject {
 public:
-	enum class AXIS { X, Y, Z };
-	
 	static const ofVec3f AXIS_X;
 	static const ofVec3f AXIS_Y;
 	static const ofVec3f AXIS_Z;
@@ -25,6 +23,7 @@ public:
 
 	ofVec3f& getPosition();
 	ofVec3f& getRotation();
+
 protected:
 
 private:

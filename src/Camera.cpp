@@ -13,12 +13,12 @@ CCamera::~CCamera()
 {
 
 }
-ofVec3f& CCamera::getRelativeX()
+ofVec3f CCamera::getRelativeX()
 {
 	ofVec3f relativeX(getRotation().z, 0, -getRotation().x);
 	return relativeX;
 }
-ofVec3f& CCamera::getRelativeCoordinate(ofVec3f& position)
+ofVec3f CCamera::getRelativeCoordinate(ofVec3f position)
 {
 	//1. 카메라의 position에 맞춰 상대위치를 구한다
 	ofVec3f relative_position = position - getPosition();
@@ -44,7 +44,7 @@ ofVec3f& CCamera::getRelativeCoordinate(ofVec3f& position)
 	return relative_coordinate;
 }
 	
-ofVec2f& CCamera::getProjectedPosition(ofVec3f& position)
+ofVec2f CCamera::getProjectedPosition(ofVec3f position)
 {
 	ofVec2f projected;
 	float d = 1 / tanf(m_FOV * PI / 180);

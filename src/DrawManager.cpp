@@ -13,13 +13,6 @@ CDrawManager* CDrawManager::getInstance()
 	if (instance == NULL) instance = new CDrawManager();
 	return instance;
 }
-CDrawManager* CDrawManager::getInstance(CCamera camera)
-{
-	if (instance == NULL) instance = new CDrawManager();
-	instance->m_camera = camera;
-
-	return instance;
-}
 
 void CDrawManager::drawBox(ofVec3f vertex[4], ofColor color)
 {

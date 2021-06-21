@@ -10,6 +10,7 @@ public:
 
 	void drawSelf();
 	void update();
+
 protected:
 
 private:

@@ -18,5 +18,4 @@ protected:
 private:
 	int m_speed;
 };
-
 #endif

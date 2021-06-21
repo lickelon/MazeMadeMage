@@ -6,19 +6,18 @@
 
 class CCamera : public CObject {
 public:
-	enum class AXIS { X, Y, Z };
-
 	CCamera();
 	virtual ~CCamera();
 
 	//카메라가 바라보는 방향을 z축으로 할 때, 상대적인 x축 벡터를 반환
-	ofVec3f& getRelativeX();
+	ofVec3f getRelativeX();
 	//카메라가 바라보는 방향을 z축으로 하여 변환된 좌표를 반환
-	ofVec3f& getRelativeCoordinate(ofVec3f& position);
+	ofVec3f getRelativeCoordinate(ofVec3f position);
 	//변환된 상대죄표를 받아 투영된 위치를 반환
-	ofVec2f& getProjectedPosition(ofVec3f& position);
+	ofVec2f getProjectedPosition(ofVec3f position);
 
 	void setWindowSize(float windowWidth, float windowHeight);
+
 protected:
 	
 private:

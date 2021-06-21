@@ -76,7 +76,3 @@ CCamera& CPlayer::getCamera()
 {
 	return m_camera;
 }
-int CPlayer::getSensitivity()
-{
-	return m_sensitivity;
-}

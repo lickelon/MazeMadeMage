@@ -11,7 +11,6 @@ private:
 
 public:
 	static CDrawManager* getInstance();
-	static CDrawManager* getInstance(CCamera camera);
 
 	void drawBox(ofVec3f vertex[4], ofColor color);
 	void drawLine(ofVec3f vertex1, ofVec3f vertex2, ofColor color);
@@ -21,6 +20,7 @@ public:
 	void convertPoint(ofVec3f* vertex, int vertex_num, ofVec3f position, float angle);
 
 	void setCamera(CCamera camera);
+
 private:
 	CCamera m_camera;
 };

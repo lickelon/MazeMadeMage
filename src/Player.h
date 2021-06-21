@@ -21,7 +21,7 @@ public:
 	void mouseInput(float dx, float dy);
 
 	CCamera& getCamera();
-	int getSensitivity();
+
 protected:
 
 private:
